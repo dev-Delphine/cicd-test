@@ -38,7 +38,7 @@
                 },
                 "max_retries": 0,
                 "spark_python_task": {
-                    "python_file": "tests/integration/sample_test.py"
+                    "python_file": "tests/unit/sample_test.py"
                 }
             }
         ]

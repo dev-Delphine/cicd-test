@@ -37,7 +37,7 @@ if __name__ == "__main__":
     # for other tests, please simply replace the SampleJobIntegrationTest with your custom class name
     loader = unittest.TestLoader()
     tests = loader.loadTestsFromTestCase(SampleJobIntegrationTest)
-    runner = unittest.TextTestRunner(verbosity=1)
+    runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(tests)
     if not result.wasSuccessful():
         raise RuntimeError(
