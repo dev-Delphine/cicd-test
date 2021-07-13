@@ -17,7 +17,6 @@ jobs:
     env:
       DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
       DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
-      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
 
     steps:
       - uses: actions/checkout@v1
@@ -40,6 +39,8 @@ jobs:
       - name: Connect/Create Azure Machine Learning Workspace
         id: aml_workspace
         uses: Azure/aml-workspace@v1
+        with:
+          azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Run unit tests
         run: |
