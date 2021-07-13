@@ -43,5 +43,3 @@ if __name__ == "__main__":
         raise RuntimeError(
             "One or multiple tests failed. Please check job logs for additional information."
         )
-    
-    print("test integration")
