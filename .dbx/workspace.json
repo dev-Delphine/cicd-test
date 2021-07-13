@@ -1,5 +1,5 @@
 {
-    "name": "dxxaml",
-    "resource_group": "dxx-databricks",
-    "create_workspace": true
+  "name": "dxxaml",
+  "resource_group": "dxx-databricks",
+  "create_workspace": true
 }
