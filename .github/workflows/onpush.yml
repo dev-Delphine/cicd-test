@@ -35,12 +35,12 @@ jobs:
           pip install -r unit-requirements.txt
           pip install -e .
 
-      # Connect or Create the Azure Machine Learning Workspace
-      - name: Connect/Create Azure Machine Learning Workspace
-        id: aml_workspace
-        uses: Azure/aml-workspace@v1
-        with:
-          azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}
+#      # Connect or Create the Azure Machine Learning Workspace
+#      - name: Connect/Create Azure Machine Learning Workspace
+#        id: aml_workspace
+#        uses: Azure/aml-workspace@v1
+#        with:
+#          azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Run unit tests
         run: |
