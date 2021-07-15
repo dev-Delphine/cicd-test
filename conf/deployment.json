@@ -39,11 +39,6 @@
                 "max_retries": 0,
                 "spark_python_task": {
                     "python_file": "tests/integration/sample_test.py"
-                },
-                "spark_conf": {
-                    "spark.driver.extraJavaOptions": "-Duser.timezone=Asia/Shanghai",
-                    "spark.executor.extraJavaOptions": "-Duser.timezone=Asia/Shanghai",
-                    "spark.sql.session.timeZone": "Asia/Shanghai"
                 }
             }
         ]
